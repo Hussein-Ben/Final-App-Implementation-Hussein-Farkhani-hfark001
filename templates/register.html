@@ -1,0 +1,30 @@
+<!-- THINK: 
+	- What is unusual about this register form?
+	- What are the implications of that?
+	- How might you help a user who has forgotten their password?
+	- FEEL FREE TO IMPROVE THIS FORM!
+-->
+
+<div>
+	<h3>Register</h3>
+	<form method="POST" action="/cgi-bin/register.py">
+		<div class="form-group">
+			<label for="username">Username:</label>
+			<input type="text" name="username" required>
+			<label for="password">Password:</label>
+			<input type="password" name="password" required>
+			<label for="email">Email:</label>
+			<input type="email" name="email" required>
+		</div>
+		<div class="form-group">
+			<label for="first">First name:</label>
+			<input type="text" name="first" placeholder="First name">
+			<label for="last">Last name:</label>
+			<input type="text" name="last" placeholder="Last name">
+		</div>
+		<div class="form-group">
+			<input type="submit" name="btn_register">
+		</div>
+	</form>
+	<div class="msg"><p>{}</p></div>
+</div>
